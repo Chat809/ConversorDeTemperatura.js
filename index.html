@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="invisible-box">
+      <img class="img-logo" src="Logo (1).svg" alt="Logo Tempfy" />
+      <div class="blue-box">
+        <form class="formulario-conversor">
+          <div class="titulo-conversor">Converter Temperatura</div>
+          <select
+            class="selecionar-medida-de-temperatrura"
+            name="temperatura"
+            id="selectTemperatura"
+          >
+            <option value="placeholder-select">
+              Escolha a medida de temperatura
+            </option>
+            <option value="celsius">Graus Celsius</option>
+            <option value="fahrenheit">Graus Fahrenheit</option>
+            <option value="kelvin">Graus Kelvin</option>
+          </select>
+
+          <input
+            class="input-numero-temperatura"
+            type="number"
+            name="grau"
+            placeholder="Digite a temperatura"
+            id="inputValorTemperatura"
+          />
+          <button type="button" id="btnClick" class="botao-converter">
+            Converter
+          </button>
+        </form>
+      </div>
+      <div id="boxResultado" class="box-resultado">
+        <div class="titulo-conversor">Resultado:</div>
+        <div id="resultado1" class="campo-resultado"></div>
+        <div id="resultado2" class="campo-resultado"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

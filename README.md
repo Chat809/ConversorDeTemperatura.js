@@ -1,1 +1,1 @@
-# ConversorDeTemperatura.js
+# Conversor-de-Temperatura
